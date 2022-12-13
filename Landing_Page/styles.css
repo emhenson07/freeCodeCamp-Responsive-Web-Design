@@ -1,0 +1,200 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --text: hsl(228, 12%, 48% );
+    --bg: hsl(195, 53%, 79%);
+    --blue: hsl(211, 29%, 29%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+#header-img {
+    width: 60px;
+    object-fit: contain;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 0 10px;
+}
+
+.logo-containter {
+    display: flex;
+    align-items: center;
+
+}
+
+.the-product {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 10px;
+
+}
+
+#email-section {
+    margin-top: 100px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+}
+
+#submit {
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+section::before{
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+section {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: var(--blue);
+    margin-right: 30px;
+}
+
+#features {
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+}
+    
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+  
+  #video> iframe {
+    max-width: 560px;
+    width: 100%;}
+
+#Products {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%);
+    margin: 10px;
+    border:  var(--white);
+    border-radius: 3px;
+  }
+  
+  .product > .level {
+    background-color: var(--white);
+    color: var(--white);
+    padding: 15px 0;
+    width: 150%;
+    font-weight: 700;
+  }
+  
+  .product > h2 {
+    margin-top: 15px;
+  }
+  
+  .product > ol {
+    margin: 15px 0;
+  }
+  
+  .product > ol > li {
+    padding: 5px 0;
+  }
+  
+  .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: var(--blue);
+    font-weight: 400;
+    color: var(--white)
+  }
+  
+  .product > button:hover {
+    background-color: var(--blue);
+    transition: background-color 1s;
+  }
+  
+  @media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+
+
+
+@media only screen and (min-width: 600px) {
+    #nav-bar{
+        flex-direction: row;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    background-color: var(--blue);
+    padding: 20px;
+  }
+  
+    
+  footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: var(--white);
+  }

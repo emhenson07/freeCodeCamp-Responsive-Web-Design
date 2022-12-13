@@ -1,0 +1,56 @@
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title"> How can we improve the school ?</h1>
+  <p id="description"> Thank you for taking your time in answering these questions. your participation is very appreciated. </p>
+    <form id="survey-form">
+      <fieldset>
+     <div>
+      <label input id="name-label">  Name <input placeholder="name" id="name" name="name" type="text" required/></label> 
+      </div>
+      <div>
+      <label input id="email-label"> Email <input  placeholder="email" id ="email" type="email" required/></label>
+      </div>
+      <div>
+      <label input id="number-label"> Age <input placeholder="age" id ="number" name= "number" min="5" max="99" type="number"/></label>
+      </div>
+        </fieldset>
+        <fieldset>
+        <label> How are you associated to the school?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Student</option>
+              <option value="2">Parent</option>
+              <option value="3">Teacher</option>
+            </select>
+          </label>
+        <div> 
+          <label>Are you satisfied with the school?</label>
+          <label><input id="satisfied" type="checkbox" name="check" value="yes"> Yes </label>
+           <label> <input id="satisfied" type="checkbox" name="check" value="no"> No </label>
+           </div>
+        <div> 
+          <label> If you could improve one thing what would you?</label>
+          </div> 
+          <div> 
+          <label for="Cafeteria Food"> <input id="Cafeteria Food" type="radio" name="improving" value="food" /> Cafeteria Food </label>
+          </div> 
+          <div> 
+           <label><input id="Cleaner environment" type="radio" name="improving" value="environment" />  Environment</label>
+           </div> 
+           <div> 
+           <label><input id="study spaces" type="radio" name="improving" value="study"  /> Study spaces</label>
+           </div> 
+           <div> 
+           <label><input id="school clubs" type="radio" name="improving" value="clubs" /> School clubs</label>
+           </div> 
+           <div> 
+             <label> Please suggest what we could do to improve the school</label>
+             <textarea id="suggest" name="suggest" rows="5" cols="40" placeholder="Enter your suggestions here..."></textarea>
+             </div>
+             <div> 
+    <input id="submit" type="submit" value="Submit" />
+             </div>
+         </fieldset>
+    </form>
+    </body>
+    
